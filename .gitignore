@@ -1,0 +1,6 @@
+twits/node_modules
+twits/build
+node_modules
+
+.env
+twits/.env

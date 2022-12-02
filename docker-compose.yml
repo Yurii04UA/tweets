@@ -1,0 +1,15 @@
+services:
+  server:
+    container_name: server-container
+    restart: always
+    build: ./server
+    ports:
+      - "3002:3002"
+    depends_on:
+      - client
+  client:
+    container_name: client-container
+    restart: always
+    build: ./twits
+    ports:
+      - "3001:3001"
